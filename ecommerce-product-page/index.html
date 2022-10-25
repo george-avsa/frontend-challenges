@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="wrapper">
+    <header class="header">
+
+        <img src="./images/icon-menu.svg" alt="" class="header__burger">
+        <p class="header__logo">sneakers</p>
+        <ul class="navigation">
+          <li class="navigation__item">
+            Collections
+          </li>
+          <li class="navigation__item">
+            Men
+          </li>
+          <li class="navigation__item">
+            Women
+          </li>
+          <li class="navigation__item">
+            About
+          </li>
+          <li class="navigation__item">
+            Contact
+          </li>
+        </ul>
+        <div class="cart">
+          <img src="./images/icon-cart.svg" alt="" class="header__cart">
+          <div class="cart__amount">
+            9
+          </div>
+        </div>
+        <div class="cart__body">
+          <p class="cart__title">Cart</p>
+          <div class="cart__content cart__content--full">
+            
+          </div>
+        </div>
+          <img src="./images/image-avatar.png" alt="" class="header__profile_photo">
+    </header>
+    
+    <div class="product">
+      <div class="slider">
+        <div class="slider__grid">
+          <img src="./images/image-product-1.jpg" alt="" class="slider__main_photo">
+          <div class="slider__item"><div class="slider__item--active"></div></div>
+          <div class="slider__item"></div>
+          <div class="slider__item"></div>
+          <div class="slider__item"></div>
+          <div class="slider__left-button"><img src="./images/icon-previous.svg" alt=""></div>
+          <div class="slider__right-button"><img src="./images/icon-next.svg" alt=""></div>
+        </div>
+      </div>
+      <div class="product__info">
+
+        <p class="product__company-name">SNEAKER COMPANY</p>
+        
+        <h1 class="product__name">
+          Fall Limited Edition Sneakers
+        </h1>
+        
+        <p class="product__description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        
+        <div class="product__price-block">
+          <p class="product__price">
+            $125.00
+          </p>
+          <div class="product__dicsount">
+            50%
+          </div>
+        </div>
+        <p class="product__old-price">$250.00</p>
+        
+        <div class="product__buttons">
+          <div class="amount-btn">
+            <p class="amount-btn__decrement">-</p>
+            <p class="amount-btn__amount">
+              0
+            </p>
+            <p class="amount-btn__increment">+</p>
+          </div>
+          <div class="product__add_to_cart">
+            <img src="./images/icon-cart_white.svg" alt="" class="prodcuct__cart-btn">
+            Add to cart
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+  <div class="mobile-menu">
+    <div class="mobile-menu__content">
+      <img src="./images/icon-close.svg" alt="" class="mobile-menu__close">
+      <p class="mobile-menu__item">Collections</p>
+      <p class="mobile-menu__item">Men</p>
+      <p class="mobile-menu__item">Women</p>
+      <p class="mobile-menu__item">About</p>
+      <p class="mobile-menu__item">Contact</p>
+    </div>
+  </div>
+
+  <div class="modal-slider">
+    <div class="modal-slider__content">
+      <div class="modal-slider__big-picture">
+        <img src="./images/image-product-1.jpg" alt="" class="modal-slider__big-picture">
+        <div class="modal-slider__arrow-left"></div>
+        <div class="modal-slider__arrow-right"></div>
+        <img class="modal-slider__close" src="./images/icon-close-white.svg">
+      </div>
+      <div class="modal-slider__item modal-slider__item--active"><img src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+      <div class="modal-slider__item"><img src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+      <div class="modal-slider__item"><img src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+      <div class="modal-slider__item"><img src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
